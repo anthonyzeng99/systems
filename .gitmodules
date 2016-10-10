@@ -1,0 +1,3 @@
+[submodule "hw/02List"]
+	path = hw/02List
+	url = https://github.com/anthonyzeng99/mks65-list
