@@ -39,3 +39,12 @@ File Redirection
 
 		  You will lose any reference to the original
 		  fd2, that file is closed.
+
+             dup - <unistd.h>
+	     	  Duplicates an existing entrty in the file table.
+
+		  Returns a new file descriptor for the duplicate
+		  entry.
+
+		  dup(fd)
+			returns the new file descriptor
