@@ -1,0 +1,41 @@
+11/21/2016
+
+File Redirection
+     Changing the usual input/output behavior of a program
+
+     Command line redirection
+     
+     	     >
+		Redirects stdout to a file
+		Overwrites the contents of the file
+		<COMMAND> <FILE>
+		ls > file_list
+
+	     >>
+ 	        Redirects stdout to a file by appending
+
+             2>
+	        Redirects stderr to a file
+		Overwrites the file (2>> appends);
+
+	     &>
+	        Redirect stdout and stderr
+
+	     <
+		redirects stdin from a file 
+
+	     | (pipe)
+	        Redirect stdout from one command to stdin of the next
+
+		ls | wc 
+
+     Redirection in c programs
+     
+             dup2 - <unistd.h>
+	     	  Redirect one file descriptor to another
+		  
+             dup2 (fd1, fd2)
+	     	  Redirects fd2 to fd1
+
+		  You will lose any reference to the original
+		  fd2, that file is closed.
