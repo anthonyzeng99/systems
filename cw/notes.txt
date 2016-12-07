@@ -247,4 +247,17 @@ Semaphores (created by Edsger Dijkstra)
 					IPC_EXCL: Fail if the semaphore already exists and
 						  IPC_CREAT is on.
 
-					
+12/6/2016
+Aim: 
+
+Semaphore Code
+	  semctl - <sys/types.h> <sys/ipc.h> <sys/sem.h>
+
+	  Control the semaphore, including:
+
+	  	  Set the semaphore value
+		  Remove the semaphore
+		  Get the current value
+		  Get information about the semaphore
+
+ 	  semctl(<DESCRIPTOR>, <INDEX>, <OPERATION>, <DATA>)
